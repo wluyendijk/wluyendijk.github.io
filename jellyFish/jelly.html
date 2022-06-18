@@ -14,9 +14,9 @@
 		}
 		
 		canvas{
-			width: 80%;
-			margin-left: 10%;
-			margin-right: 10%;
+			
+			margin-left: 5%;
+			margin-right: 5%;
 		}
 	</style>
     <body>
@@ -424,7 +424,7 @@
 			   if(leaveScreen){
 				   moveUp();
 				   if(posY <= newY){
-					 println("Jelly fish will be deleted");
+					 //println("Jelly fish will be deleted");
 					 remove = true;
 				   }
 			   }
@@ -747,7 +747,7 @@
 				if(mousePressed  && !leaveScreen){
 				 if(mouseButton == LEFT && dist(this.posX-offSetX, this.posY-offSetY, mouseX, mouseY) < 50 || dist( mouseX+62.5, mouseY+62.5, this.posX-offSetX, this.posY-offSetY) < 125 ){ //x-10   y-55
 					 this.isControlled = true;
-					 println("JellyName " + name);
+					 //println("JellyName " + name);
 					 toReturn = this.name;
 					 
 				   }else if(mouseButton == LEFT && isControlled){
@@ -762,7 +762,7 @@
 			   
 				newX = mouseX+62;
 				newY = mouseY+62;
-				println("new X: " + newX + ", new Y: " + newY);
+				//println("new X: " + newX + ", new Y: " + newY);
 				swimToPosition = true;
 			  }
 			  

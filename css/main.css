@@ -109,7 +109,7 @@ header nav ul a {
 }
 .social ul li .github svg {
   filter: saturate(100), brightness(0);
-  color: #BCFD4C !important;
+  fill: #BCFD4C !important;
   width: 8em !important;
   height: 8em !important;
 }
@@ -121,7 +121,7 @@ header nav ul a {
 }
 .social ul li .linkedin svg {
   filter: saturate(100), brightness(0);
-  color: #BCFD4C !important;
+  fill: #BCFD4C !important;
   width: 8em !important;
   height: 8em !important;
 }
@@ -133,7 +133,7 @@ header nav ul a {
 }
 .social ul li .cv svg {
   filter: saturate(100), brightness(0);
-  color: #BCFD4C !important;
+  fill: #BCFD4C !important;
   width: 8em !important;
   height: 8em !important;
 }/*# sourceMappingURL=main.css.map */

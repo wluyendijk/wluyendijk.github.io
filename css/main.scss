@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600&family=Jost:ital,wght@0,400;0,500;1,200&display=swap');
+
+body{
+    height:100hv;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+// img{
+//     width: 100%;
+// }
+
+.nav-container{
+    background-color: #3F3F3F;
+
+    a{
+        color: white;
+    }
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+
+    .logo{
+        font-family: 'Jost';
+        font-weight: 800;
+        font-size: 5em;
+        color: #BCFD4C;
+    }
+
+    nav{
+        float: right;
+        padding-bottom: 0;
+
+        ul{
+            display: flex;
+
+            a{
+                font-size: 2.5em;
+                display: block;
+                padding: 0 .5em;
+                padding-top: 1em;
+            }
+        }
+    }
+}
+
+.hero{
+    
+    background-color: #AAAAAA;
+    
+    display: grid;
+    text-align: left;
+    height: 100em;
+}
+
+.name{
+    padding-top: 16em;
+    display: grid;
+    position: relative;
+    color:#3F3F3F;
+    height: 30%;
+
+    .slider{
+        width: 70%;
+        height: 25em;
+        margin-left: 0%;
+    }
+
+    .first{
+        font-Family: 'Jost';
+        font-size: 10em;
+        font-weight: 700;
+        position: absolute;
+        top: 1em;
+        left: .5em;
+    }
+
+    .last{
+        font-size: 5em;
+        font-weight: 400;
+        position: absolute;
+        top: 4.5em;
+        left: 1.2em
+    }
+
+    .title{
+        font-size: 3em;
+        font-weight: 400;
+        position: absolute;
+        top: 10.5em;
+        left: 2em;
+    }
+}
+
+
+
+.social{
+    margin-top: -40%;
+    display: grid;
+    text-align: right;
+
+    .darkSlider{
+        width: 70%;
+        height: 25em;
+        position: absolute;
+        right: 0;
+    }
+
+   ul{
+        li{
+
+        
+
+            .github{
+                
+                display: block;
+                position: absolute;
+                right: 23em;
+                padding-top: 7em;
+
+                svg{
+                    filter:saturate(100), brightness(0);
+                    color:#BCFD4C !important;
+                    width: 8em !important;
+                    height: 8em !important;
+                }
+
+            }
+
+            .linkedin{
+                
+                display: block;
+                position: absolute;
+                right: 12em;
+                padding-top: 7em;
+
+                svg{
+                    filter:saturate(100), brightness(0);
+                    color:#BCFD4C !important;
+                    width: 8em !important;
+                    height: 8em !important;
+                }
+
+            }
+
+            .cv{
+                
+                display: block;
+                position: absolute;
+                right: 2em;
+                padding-top: 7em;
+
+                svg{
+                    filter:saturate(100), brightness(0);
+                    color:#BCFD4C !important;
+                    width: 8em !important;
+                    height: 8em !important;
+                }
+
+            }
+        }
+
+    }
+}

@@ -75,10 +75,14 @@ header{
     color:#3F3F3F;
     height: 30%;
 
-    .slider{
-        width: 70%;
-        height: 25em;
-        margin-left: 0%;
+
+    .title-card{
+        svg{
+            padding: 0;
+            fill:#BCFD4C;
+            width: 75%;
+            height: 25em !important;
+        }
     }
 
     .first{
@@ -114,11 +118,17 @@ header{
     display: grid;
     text-align: right;
 
-    .darkSlider{
-        width: 70%;
-        height: 25em;
+
+    .social-card{
         position: absolute;
-        right: 0;
+        right: -1px;
+            svg{
+                transform: rotate(180deg);
+                padding: 0;
+                fill: #6E6E6E;
+                width: 75%;
+                height: 25em !important;
+            }
     }
 
    ul{
@@ -134,10 +144,9 @@ header{
                 padding-top: 7em;
 
                 svg{
-                    filter:saturate(100), brightness(0);
-                    fill:#BCFD4C !important;
-                    width: 8em !important;
-                    height: 8em !important;
+                    fill:#BCFD4C;
+                    width: 8em;
+                    height: 8em;
                 }
 
             }
@@ -150,10 +159,9 @@ header{
                 padding-top: 7em;
 
                 svg{
-                    filter:saturate(100), brightness(0);
-                    fill:#BCFD4C !important;
-                    width: 8em !important;
-                    height: 8em !important;
+                    fill:#BCFD4C;
+                    width: 8em;
+                    height: 8em;
                 }
 
             }
@@ -166,10 +174,9 @@ header{
                 padding-top: 7em;
 
                 svg{
-                    filter:saturate(100), brightness(0);
-                    fill:#BCFD4C !important;
-                    width: 8em !important;
-                    height: 8em !important;
+                    fill:#BCFD4C;
+                    width: 8em;
+                    height: 8em;
                 }
 
             }

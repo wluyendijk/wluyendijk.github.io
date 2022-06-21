@@ -62,10 +62,11 @@ header nav ul a {
   color: #3F3F3F;
   height: 30%;
 }
-.name .slider {
-  width: 70%;
-  height: 25em;
-  margin-left: 0%;
+.name .title-card svg {
+  padding: 0;
+  fill: #BCFD4C;
+  width: 75%;
+  height: 25em !important;
 }
 .name .first {
   font-Family: "Jost";
@@ -95,11 +96,16 @@ header nav ul a {
   display: grid;
   text-align: right;
 }
-.social .darkSlider {
-  width: 70%;
-  height: 25em;
+.social .social-card {
   position: absolute;
-  right: 0;
+  right: -1px;
+}
+.social .social-card svg {
+  transform: rotate(180deg);
+  padding: 0;
+  fill: #6E6E6E;
+  width: 75%;
+  height: 25em !important;
 }
 .social ul li .github {
   display: block;
@@ -108,10 +114,9 @@ header nav ul a {
   padding-top: 7em;
 }
 .social ul li .github svg {
-  filter: saturate(100), brightness(0);
-  fill: #BCFD4C !important;
-  width: 8em !important;
-  height: 8em !important;
+  fill: #BCFD4C;
+  width: 8em;
+  height: 8em;
 }
 .social ul li .linkedin {
   display: block;
@@ -120,10 +125,9 @@ header nav ul a {
   padding-top: 7em;
 }
 .social ul li .linkedin svg {
-  filter: saturate(100), brightness(0);
-  fill: #BCFD4C !important;
-  width: 8em !important;
-  height: 8em !important;
+  fill: #BCFD4C;
+  width: 8em;
+  height: 8em;
 }
 .social ul li .cv {
   display: block;
@@ -132,8 +136,7 @@ header nav ul a {
   padding-top: 7em;
 }
 .social ul li .cv svg {
-  filter: saturate(100), brightness(0);
-  fill: #BCFD4C !important;
-  width: 8em !important;
-  height: 8em !important;
+  fill: #BCFD4C;
+  width: 8em;
+  height: 8em;
 }/*# sourceMappingURL=main.css.map */

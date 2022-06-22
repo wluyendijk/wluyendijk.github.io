@@ -5,6 +5,8 @@ body{
     height:100hv;
     margin: 0;
     font-family: 'Inter';
+    overflow: hidden;
+    
 }
 
 ul{
@@ -62,7 +64,7 @@ header{
 .hero{
     
     background-color: #AAAAAA;
-    
+    overflow: hidden;
     display: grid;
     text-align: left;
     height: 100em;
@@ -74,6 +76,7 @@ header{
     position: relative;
     color:#3F3F3F;
     height: 30%;
+    animation: animate-name 0.7s ease-in 1s;
 
 
     .title-card{
@@ -82,6 +85,7 @@ header{
             fill:#BCFD4C;
             width: 75%;
             height: 25em !important;
+            left: -.5em;
         }
     }
 
@@ -111,23 +115,39 @@ header{
     }
 }
 
+@keyframes animate-name {
+    0%{
+        transform: translate(-75%);
+    }
+    75%{
+        transform: translate(15px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
 
 
 .social{
     margin-top: -40%;
     display: grid;
     text-align: right;
+    overflow: hidden;
+    animation: animate-social 0.7s ease-in 1s;
 
 
     .social-card{
         position: absolute;
-        right: -1px;
+        overflow: hidden;
+        right: 0px;
             svg{
                 transform: rotate(180deg);
                 padding: 0;
                 fill: #6E6E6E;
                 width: 75%;
                 height: 25em !important;
+                overflow: hidden;
             }
     }
 
@@ -182,5 +202,17 @@ header{
             }
         }
 
+    }
+}
+
+@keyframes animate-social {
+    0%{
+        transform: translate(75%);
+    }
+    75%{
+        transform: translate(-5px);
+    }
+    100%{
+        transform: translate(0);
     }
 }

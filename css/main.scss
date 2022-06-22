@@ -5,7 +5,6 @@ body{
     height:100hv;
     margin: 0;
     font-family: 'Inter';
-    overflow: hidden;
     
 }
 
@@ -70,15 +69,15 @@ header{
     height: 100em;
 }
 
-.name:before{
-    display: none;
-    visibility: hidden;
-}
+// .name:before{
+//     display: none;
+//     visibility: hidden;
+// }
 
-.social:before{
-    display: none;
-    visibility: hidden;
-}
+// .social:before{
+//     display: none;
+//     visibility: hidden;
+// }
 
 .name{
     padding-top: 16em;

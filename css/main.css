@@ -4,7 +4,6 @@ body {
   height: 100hv;
   margin: 0;
   font-family: "Inter";
-  overflow: hidden;
 }
 
 ul {
@@ -55,16 +54,6 @@ header nav ul a {
   display: grid;
   text-align: left;
   height: 100em;
-}
-
-.name:before {
-  display: none;
-  visibility: hidden;
-}
-
-.social:before {
-  display: none;
-  visibility: hidden;
 }
 
 .name {

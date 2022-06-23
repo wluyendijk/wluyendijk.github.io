@@ -118,7 +118,7 @@ header nav ul a {
 
 @-webkit-keyframes animate-name {
   0% {
-    transform: translate(-75%);
+    transform: translate(-100%);
     visibility: hidden;
     opacity: 0;
   }
@@ -127,10 +127,10 @@ header nav ul a {
     opacity: 1;
   }
   30% {
-    transform: translate(-74%);
+    transform: translate(-99%);
   }
   75% {
-    transform: translate(15px);
+    transform: translate(6px);
   }
   100% {
     transform: translate(0);
@@ -139,7 +139,7 @@ header nav ul a {
 
 @keyframes animate-name {
   0% {
-    transform: translate(-75%);
+    transform: translate(-100%);
     visibility: hidden;
     opacity: 0;
   }
@@ -148,10 +148,10 @@ header nav ul a {
     opacity: 1;
   }
   30% {
-    transform: translate(-74%);
+    transform: translate(-99%);
   }
   75% {
-    transform: translate(15px);
+    transform: translate(6px);
   }
   100% {
     transform: translate(0);
@@ -237,7 +237,7 @@ header nav ul a {
 
 @-webkit-keyframes animate-social {
   0% {
-    transform: translate(75%);
+    transform: translate(100%);
     visibility: hidden;
     opacity: 0;
   }
@@ -246,10 +246,10 @@ header nav ul a {
     opacity: 1;
   }
   30% {
-    transform: translate(74%);
+    transform: translate(99%);
   }
   75% {
-    transform: translate(-5px);
+    transform: translate(-6px);
   }
   100% {
     transform: translate(0);
@@ -258,7 +258,7 @@ header nav ul a {
 
 @keyframes animate-social {
   0% {
-    transform: translate(75%);
+    transform: translate(100%);
     visibility: hidden;
     opacity: 0;
   }
@@ -267,10 +267,10 @@ header nav ul a {
     opacity: 1;
   }
   30% {
-    transform: translate(74%);
+    transform: translate(99%);
   }
   75% {
-    transform: translate(-5px);
+    transform: translate(-6px);
   }
   100% {
     transform: translate(0);

@@ -26,12 +26,12 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
 }
 header .logo {
   font-family: "Jost";
   font-weight: 800;
-  font-size: 5em;
+  font-size: 2.5em;
   color: #BCFD4C;
 }
 header nav {
@@ -42,7 +42,7 @@ header nav ul {
   display: flex;
 }
 header nav ul a {
-  font-size: 2.5em;
+  font-size: 1.2em;
   display: block;
   padding: 0 0.5em;
   padding-top: 1em;
@@ -53,11 +53,11 @@ header nav ul a {
   overflow: hidden;
   display: grid;
   text-align: left;
-  height: 100em;
+  height: 60em;
 }
 
 .name {
-  padding-top: 16em;
+  padding-top: 8em;
   display: grid;
   position: relative;
   color: #3F3F3F;
@@ -69,29 +69,29 @@ header nav ul a {
   padding: 0;
   fill: #BCFD4C;
   width: 75%;
-  height: 25em !important;
+  height: 15em !important;
   left: -0.5em;
 }
 .name .first {
   font-Family: "Jost";
-  font-size: 10em;
+  font-size: 6em;
   font-weight: 700;
   position: absolute;
-  top: 1em;
+  top: 0.7em;
   left: 0.5em;
 }
 .name .last {
-  font-size: 5em;
+  font-size: 2.7em;
   font-weight: 400;
   position: absolute;
   top: 4.5em;
-  left: 1.2em;
+  left: 1.3em;
 }
 .name .title {
-  font-size: 3em;
+  font-size: 1.6em;
   font-weight: 400;
   position: absolute;
-  top: 10.5em;
+  top: 10.3em;
   left: 2em;
 }
 
@@ -137,12 +137,13 @@ header nav ul a {
   }
 }
 .social {
-  margin-top: -40%;
+  margin-top: -50%;
   display: grid;
   text-align: right;
   overflow: hidden;
   -webkit-animation: animate-social 1.1s ease-in;
           animation: animate-social 1.1s ease-in;
+  top: 0;
 }
 .social .social-card {
   position: absolute;
@@ -231,87 +232,4 @@ header nav ul a {
   100% {
     transform: translate(0);
   }
-}
-@media only screen and (min-width: 830px) {
-  header {
-    padding: 0.5em 2em;
-  }
-  header .logo {
-    font-weight: 800;
-    font-size: 2.5em;
-  }
-  header nav {
-    padding-bottom: 0;
-  }
-  header nav ul a {
-    font-size: 1.5em;
-    padding: 0 0.5em;
-    padding-top: 1em;
-  }
-
-  .name {
-    padding-top: 8em;
-    height: 30%;
-  }
-  .name .title-card svg {
-    padding: 0;
-    width: 60%;
-    height: 18em !important;
-    left: -0.5em;
-  }
-  .name .first {
-    font-size: 7em;
-    font-weight: 700;
-    top: 0.5em;
-    left: 0.8em;
-  }
-  .name .last {
-    font-size: 5em;
-    font-weight: 400;
-    top: 2.5em;
-    left: 1.2em;
-  }
-  .name .title {
-    font-size: 3em;
-    font-weight: 400;
-    top: 10.5em;
-    left: 2em;
-  }
-
-  .social {
-    margin-top: -40%;
-  }
-  .social .social-card {
-    right: 0px;
-  }
-  .social .social-card svg {
-    padding: 0;
-    width: 60%;
-    height: 15em !important;
-    overflow: hidden;
-  }
-  .social ul li .github {
-    right: 23em;
-    padding-top: 7em;
-  }
-  .social ul li .github svg {
-    width: 8em;
-    height: 8em;
-  }
-  .social ul li .linkedin {
-    right: 12em;
-    padding-top: 7em;
-  }
-  .social ul li .linkedin svg {
-    width: 8em;
-    height: 8em;
-  }
-  .social ul li .cv {
-    right: 2em;
-    padding-top: 7em;
-  }
-  .social ul li .cv svg {
-    width: 8em;
-    height: 8em;
-  }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=test.css.map */

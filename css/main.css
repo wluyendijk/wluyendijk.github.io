@@ -31,7 +31,7 @@ p {
   position: absolute;
   width: 25px;
   height: 25px;
-  background: #d1f727;
+  background: #e5ff00;
   margin: 0 4px;
   border-radius: 50%;
 }
@@ -40,8 +40,11 @@ p {
   0% {
     transform: scale(0);
   }
-  50% {
+  25% {
     transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
   }
   100% {
     transform: scale(0);
@@ -52,8 +55,11 @@ p {
   0% {
     transform: scale(0);
   }
-  50% {
+  25% {
     transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
   }
   100% {
     transform: scale(0);

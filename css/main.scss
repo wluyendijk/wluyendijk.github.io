@@ -46,9 +46,12 @@ p{
         transform: scale(0);
     }
     25%{
-        transform: scale(1);
+        transform: scale(0);
     }
     50%{
+        transform: scale(1);
+    }
+    75%{
         transform: scale(0);
     }
     100%{
@@ -101,12 +104,14 @@ header{
     overflow: hidden;
     display: grid;
     text-align: left;
-    height: 100hv;
+    // height: 100% !important;
+    // height: screen.height();
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
     .bg{
-        height: 100% !important;
+        height: 100vh;
+        //display: flex;
         background-color: #6e6e6e7e;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
@@ -204,10 +209,9 @@ header{
 
     .social-card{
         // position: absolute;
-        overflow: hidden;
+        // overflow: hidden;
         right: 0px;
             svg{
-                transform: rotate(180deg);
                 padding: 0;
                 fill: #4e4e4ed5;
                 width: 85%;
@@ -343,117 +347,189 @@ header{
 * Media query for changing scale of sites based on screen size
 ********/
 
-@media only screen and (min-width: 830px){
+@media screen and (min-width: 500px) {
 
     header{
-        padding: .5em 2em;
+        padding: 0.75em 3.1em;
     
         .logo{
             font-weight: 800;
-            font-size: 2.5em;
+            font-size: 2em;
         }
     
         nav{
-            padding-bottom: 0;
-    
             ul{
-    
                 a{
-                    font-size: 1.5em;
+                    font-size: 1.4em;
                     padding: 0 .5em;
-                    padding-top: 1em;
+                    padding-top: .6em;
                 }
             }
         }
     }
     
-    .hero{
-        // height: 100em;
-    }
-    
     .name{
-        padding-top: 8em;
-        height: 30%;
-    
         .title-card{
             svg{
                 padding: 0;
-                width: 60%;
-                height: 18em !important;
+                width: 75%;
+                height: 12em !important;
                 left: -.5em;
             }
         }
     
         .first{
-            font-size: 7em;
+            font-size: 5em;
             font-weight: 700;
-            top: .5em;
-            left: .8em;
+            top: .4em;
+            left: .7em;
         }
     
         .last{
-            font-size: 5em;
-            font-weight: 400;
-            top: 2.5em;
-            left: 1.2em
+            font-size: 2.5em;
+            font-weight: 500;
+            top: 3.7em;
+            left: 1.5 em;
         }
     
         .title{
-            font-size: 3em;
-            font-weight: 400;
-            top: 10.5em;
-            left: 2em;
+            font-size: 1.7em;
+            font-weight: 300;
+            top: 7.5em;
+            left: 2.1em;
         }
     }
     
     .social{
-        margin-top: -40%;
-    
+        padding-top: 3em;
+        height: 100%;
+        padding-bottom:6em;
+
         .social-card{
             right: 0px;
                 svg{
                     padding: 0;
-                    width: 60%;
-                    height: 15em !important;
-                    overflow: hidden;
+                    width: 75%;
+                    height: 12em !important;
                 }
         }
     
        ul{
             li{
                 .github{
-                    right: 23em;
-                    padding-top: 7em;
-    
+                    right: 12.5em;
+                    top: 6.5em;
                     svg{
-                        width: 8em;
-                        height: 8em;
+                        width: 4.5em;
+                        height: 4.5em;
                     }
-    
                 }
     
                 .linkedin{
-                    right: 12em;
-                    padding-top: 7em;
-    
+                    right: 6.5em;
+                    top: 6.5em;
                     svg{
-                        width: 8em;
-                        height: 8em;
+                        width: 4.5em;
+                        height: 4.5em;
                     }
                 }
     
                 .cv{
-                    right: 2em;
-                    padding-top: 7em;
-    
+                    right: 1em;
+                    top: 6.5em;
                     svg{
-                        width: 8em;
-                        height: 8em;
+                        width: 4.5em;
+                        height: 4.5em;
                     }
-    
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .name{
+        .title-card{
+            svg{
+                padding: 0;
+                width: 65%;
+                height: 12em !important;
+                left: -.5em;
+            }
+        }
+    }
     
+    .social{
+        padding-top: 3em;
+        height: 100%;
+        padding-bottom:6em;
+
+        .social-card{
+            right: 0px;
+                svg{
+                    padding: 0;
+                    width: 65%;
+                    height: 12em !important;
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .name{
+        .title-card{
+            svg{
+                padding: 0;
+                width: 55%;
+                height: 14em !important;
+                left: -.5em;
+            }
+        }
+    }
+    
+    .social{
+        padding-top: 3em;
+        height: 100%;
+        padding-bottom:6em;
+
+        .social-card{
+            right: 0px;
+                svg{
+                    padding: 0;
+                    width: 55%;
+                    height: 14em !important;
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .name{
+        .title-card{
+            svg{
+                padding: 0;
+                width: 45%;
+                height: 15em !important;
+                left: -.5em;
+            }
+        }
+    }
+    
+    .social{
+        padding-top: 3em;
+        height: 100%;
+        padding-bottom:6em;
+
+        .social-card{
+            right: 0px;
+                svg{
+                    padding: 0;
+                    width: 45%;
+                    height: 15em !important;
+                }
         }
     }
 }
